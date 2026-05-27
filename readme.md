@@ -90,3 +90,11 @@ git commit -m "Your commit message here"
 
 
 
+#Instructions & notes
+
+1. Target web app: "https://www.saucedemo.com/"
+2. Steps:
+    1. Go to the home page
+    2. Assert if the title is correct
+    3. Assert Header text
+ 3. Done 🎉
