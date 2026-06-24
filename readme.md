@@ -98,3 +98,10 @@ git commit -m "Your commit message here"
     2. Assert if the title is correct
     3. Assert Header text
  3. Done 🎉
+
+//CodeGen
+
+** Option 2 - CLI 
+- Help --> 'npx playright codegen --help'
+- CLI Basic Command - npx playwright codegen
+- With URL - 'npx playwright codegen https://saucedemo.com'

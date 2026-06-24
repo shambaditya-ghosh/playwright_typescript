@@ -1,4 +1,4 @@
-import{test, expect} from '@playwright/test';
+import{test, expect } from '@playwright/test';
 
 test('should load home page with correct page title',async({page})=>{
 
@@ -14,12 +14,23 @@ test('should load home page with correct page title',async({page})=>{
 });
 
 test('should have username and password input fields', async({page})=>{
+
+    // Verify if the username are present and have correct placeholder text
     
     await page.goto('https://saucedemo.com');
     await expect(page.locator("#user-name")).toHaveAttribute('placeholder', 'Username');
     await expect(page.locator("#user-name")).toBeVisible();
 
+    // Verify if the password are present and have correct placeholder text
+
     await expect(page.locator("#password")).toHaveAttribute('placeholder', 'Password');
     await expect(page.locator("#password")).toBeVisible();
+
+})
+//Smoke testing - 
+test('should have login button',{tag:['@smoke']},async({page},testInfo)=>{
+    await page.goto('https://saucedemo.com');
+    //steps..
+    await page.locator('#login-button').click();
 
 })
